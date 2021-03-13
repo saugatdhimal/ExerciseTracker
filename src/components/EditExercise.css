@@ -1,0 +1,33 @@
+.editExercise{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    background-image: url('https://images.pexels.com/photos/34514/spot-runs-start-la.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.editExercise__form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .editExercise__form{
+        width: 65vw;
+    }
+    /* .createExercise__paper{
+        margin-top: 100px;
+    } */
+  }

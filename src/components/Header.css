@@ -1,0 +1,31 @@
+.header{
+    padding: 20px;
+    background-color: navy; 
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.header ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header li {
+    list-style: none;
+    text-decoration-line: none;
+    font-size: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+    .header{
+        padding: 5px;
+    }
+    .header ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    .header li{
+        margin-top: 5px;
+        font-size: 23px;
+    }
+  }
