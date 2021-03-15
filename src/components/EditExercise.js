@@ -78,7 +78,11 @@ function EditExercise() {
 
     const deleteExercise = () => {
         axios.delete(`https://exercise-tracker77.herokuapp.com/exercise/${id}`)
-             .then(res => console.log(res.data));
+             .then(res => setResponse(res.data));
+                     setUsername('')
+                     setDescription('')
+                     setDuration('')
+                     setDate(new Date())
         
         
     }
