@@ -79,7 +79,8 @@ function EditExercise() {
     const deleteExercise = () => {
         axios.delete(`https://exercise-tracker77.herokuapp.com/exercise/${id}`)
              .then(res => console.log(res.data));
-        window.location = '/'
+        
+        
     }
     return (
         <div className="editExercise">
