@@ -1,6 +1,6 @@
 
 import './App.css';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
 import Header from './components/Header'
 import CreateExercise from './components/CreateExercise'
 import ExerciseList from './components/ExerciseList'
@@ -24,6 +24,7 @@ function App() {
         <Route path="/">
           <ExerciseList />
         </Route>
+    <Redirect to="/" />
       </Switch>
     </Router>
   );
